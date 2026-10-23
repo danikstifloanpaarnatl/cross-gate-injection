@@ -71,6 +71,10 @@ Cross-Gate Injection and the Hijack Ladder in Typed Decision Agents}
 \noindent Typed decision interfaces let a language model act inside a software workflow by answering a fixed question, yet current prompt-injection metrics do not separate a changed answer from a changed action. We name the attack class \emph{cross-gate injection} (\xgi): a single attacker-controlled text field is consumed by several typed decision gates, and the question is how far its influence travels. We replace the scalar attack-success rate with the \emph{hijack ladder}, an ordered scale \Hone--\Hthree{} that distinguishes answer sensitivity, path deviation, and action hijack, and we report a \emph{hijack profile} instead of one number. On Jev~1.13 a crafted attachment moved the preferred disposition in 3 of 12 cases (\Hone) while every case stayed inside the permitted review-or-resolution set, so no case reached \Hthree. Across three further workflow types the same attachment changed at least one typed judgment in 3 of 3 pairs (\Hone) without executing an action. An unguarded controller that admitted attachment text as a business fact changed the final action in 39 of 54 trials (\Hthree). The distance between these two measurements localizes the failure: not model sensitivity but \emph{provenance collapse}, the re-admission of attacker-influenced text as an authoritative fact at a later gate. Typed decisions can be swayed; actions are hijacked only when provenance collapses. A \emph{fact-bound action edge}, whose guard reads a fact the model never produced, removes the boundary crossing.
 \end{abstract}
 
+\begin{center}
+Code and experiment artifacts are available at \url{https://github.com/danikstifloanpaarnatl/cross-gate-injection}.
+\end{center}
+
 \vspace{0.4em}
 \noindent\textbf{Keywords:} cross-gate injection; typed decision systems; hijack ladder; prompt injection; provenance; control-flow integrity
 
@@ -369,7 +373,7 @@ A natural extension follows the ladder upwards: require a tool-returned fact for
 Typed decision models should be evaluated at the action boundary of the workflow that consumes them. We named the attack class cross-gate injection, ordered its observables on the hijack ladder, and replaced the scalar attack-success rate with a profile that says how far each case travelled. On Jev 1.13 the influence stopped at the first rung: judgments moved, the disposition did not. When the guard admitted the same text as a fact, 39 of 54 trials reached the third rung. The difference between those two measurements is provenance collapse, and the condition that prevents it is a fact-bound action edge. Typed decisions can be swayed; actions are hijacked only when provenance collapses.
 
 \section*{Artifact Availability}
-The machine-readable summaries, the evaluator, and the replay commands are described in the accompanying artifact note. Operational paths and command transcripts are kept out of the scientific narrative; the paper reports the measurements and their reading.
+The code, machine-readable summaries, evaluator, and replay commands are available at \url{https://github.com/danikstifloanpaarnatl/cross-gate-injection}. Operational paths and command transcripts are kept out of the scientific narrative; the paper reports the measurements and their reading.
 
 \begingroup
 \small
