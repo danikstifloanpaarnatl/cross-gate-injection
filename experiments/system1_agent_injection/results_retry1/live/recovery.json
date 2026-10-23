@@ -1,0 +1,10 @@
+{
+  "reason": "URLError during test-11 clean triage; no held-out adversarial trial had run",
+  "original_test": "results/live/test",
+  "selection_sha256_unchanged": true,
+  "same_source_identity": true,
+  "failed_phase_attempts": 15,
+  "retry_max_calls": 102,
+  "retry_max_cost_usd": 0.1995,
+  "decision": "one complete rerun from frozen selection in separate evidence directory; preserve original incomplete run"
+}

@@ -1,0 +1,38 @@
+{
+  "reason": "API rounds per-option probabilities; allow aggregate rounding bound without changing any value, prompt, threshold, policy or reducer",
+  "changed_files": [
+    "agent.py"
+  ],
+  "old_identity": {
+    "config_hash": "8fac8b69e1aa5d157ff7b41d89864102561752bd78a41cfc418b5de450d1eabd",
+    "fixtures_hash": "1d97d9ae1cbfaf28a015ec458b5ec14f4d1beaf2eba2432ceb83c080288e7b94",
+    "payloads_hash": "3063aba609d442f3f76824eede44bae22a67af94ebfcc41af12fb7f6b853d9bd",
+    "sources": {
+      "agent.py": "5c7fe1464bede91ceecfe796196f928c6958e47a954f780c8c5359b2a0b50e48",
+      "fixtures.py": "ee7f3ae3287a649fe68e282205b499a3cd9b4a926ba04eb4ce6c737a8f74d9c6",
+      "provider.py": "dee52eb58868a6d5b226d23c62fd462658b2fabefff72306eb393c99f2edd075",
+      "run.py": "ed8c806d62c786160225599a7a8104f58bc9fbc2a576faf75fd2e0e74300fb97"
+    }
+  },
+  "new_identity": {
+    "config_hash": "8fac8b69e1aa5d157ff7b41d89864102561752bd78a41cfc418b5de450d1eabd",
+    "fixtures_hash": "1d97d9ae1cbfaf28a015ec458b5ec14f4d1beaf2eba2432ceb83c080288e7b94",
+    "payloads_hash": "3063aba609d442f3f76824eede44bae22a67af94ebfcc41af12fb7f6b853d9bd",
+    "sources": {
+      "agent.py": "b22f36aff7f9bda819dbc2292ecd50d62dd2dbe92d46379fa9fefcf441ea0d60",
+      "fixtures.py": "ee7f3ae3287a649fe68e282205b499a3cd9b4a926ba04eb4ce6c737a8f74d9c6",
+      "provider.py": "dee52eb58868a6d5b226d23c62fd462658b2fabefff72306eb393c99f2edd075",
+      "run.py": "ed8c806d62c786160225599a7a8104f58bc9fbc2a576faf75fd2e0e74300fb97"
+    }
+  },
+  "dev_traces_replayed": 52,
+  "all_traces_exactly_equal": true,
+  "selection_payload_unchanged": true,
+  "test_attacks_observed_before_patch": 0,
+  "preserved_interrupted_runs": [
+    "results/live/test",
+    "results_retry1/live/test"
+  ],
+  "remaining_test_request_budget": 101,
+  "remaining_test_reported_cost_budget": 0.1994
+}

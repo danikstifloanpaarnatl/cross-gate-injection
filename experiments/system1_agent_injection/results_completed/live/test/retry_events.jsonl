@@ -1,0 +1,2 @@
+{"stage": "verify", "error": "URLError", "extra_attempt": 1, "sleep_seconds": 1}
+{"stage": "triage", "error": "URLError", "extra_attempt": 1, "sleep_seconds": 1}

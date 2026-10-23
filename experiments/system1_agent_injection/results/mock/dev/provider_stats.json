@@ -1,0 +1,11 @@
+{
+  "attempts": 92,
+  "successes": 92,
+  "known_cost_usd": 0.0,
+  "missing_cost_responses": 0,
+  "latency_seconds": 0.0012897660035378067,
+  "reported_model": "mock/smoke-only",
+  "requested_model": "mock/smoke-only",
+  "original_requested_model": "~typesafe/jev-latest",
+  "mock": true
+}

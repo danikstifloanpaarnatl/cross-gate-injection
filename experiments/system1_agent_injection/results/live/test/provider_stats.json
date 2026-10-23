@@ -1,0 +1,11 @@
+{
+  "attempts": 15,
+  "successes": 14,
+  "known_cost_usd": 0.0004268040000000001,
+  "missing_cost_responses": 0,
+  "latency_seconds": 13.746870230999775,
+  "reported_model": "typesafe/jev-1.13-20260917",
+  "requested_model": "typesafe/jev-1.13-20260917",
+  "original_requested_model": "typesafe/jev-1.13",
+  "mock": false
+}
